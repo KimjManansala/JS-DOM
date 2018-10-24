@@ -3,15 +3,20 @@
 // https://www.w3schools.com/bootstrap/bootstrap_collapse.asp
 
 // What will be click
-let button = document.getElementById("section-header");
+const pressMe = document.getElementById('section-header');
+console.dir(pressMe)
+
 // What will be removed
-let section = document.getElementsByTagName("p");
-let containerSection = section.parentNode;  //The coitaining element
+const section =document.getElementById('section');
+console.log(section)
 
-
-button.onclick= function(){
-    containerSection.removeChild(section);
-    document.body.style.backgroundColor = "blue";
+pressMe.addEventListener('click', function(){
+    if(section.style.display !== "none") section.style.display = "none";
+    else section.style.display = "block";
     
+})
 
-}
+
+
+
+
