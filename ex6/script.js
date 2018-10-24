@@ -6,9 +6,11 @@ var counter = document.getElementById('counter');
 
 var count = 0; // This variable holds the current value of the counter!
 
-incrementButton.addEventListener('click', function(){
-
+incrementButton.onclick = function(){
+    count++
     counter.innerHTML = count;
-    
-});
-
+}
+decrementButton.onclick = function(){
+    count--;
+    counter.innerHTML = count;
+}
