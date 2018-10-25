@@ -25,3 +25,10 @@ function addToList (){
     todoList.appendChild(newItem)
 }
 
+function removeFromList (event){
+
+}
+
+todoList.addEventListener('click', function (event){
+    event.target.style.display= 'none';
+})
